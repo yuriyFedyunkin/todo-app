@@ -1,6 +1,6 @@
 module github.com/yuriyFedyunkin/todo-app
 
-go 1.22
+go 1.22.1
 
 require (
 	github.com/KyleBanks/depth v1.2.1 // indirect
