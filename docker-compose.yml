@@ -2,7 +2,6 @@ version: '3.9'
 services:
   todo-app:
     build: .
-    command: ./docker-entrypoint.sh postgres ./todo-app
     ports: 
       - 8000:8000
     environment: 

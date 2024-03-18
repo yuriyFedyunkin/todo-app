@@ -15,4 +15,5 @@ RUN chmod +x docker-entrypoint.sh
 RUN go mod download && go mod verify
 RUN go build -o todo-app ./cmd/main.go
 
-CMD ["./todo-app"]
+ENTRYPOINT ["./docker-entrypoint.sh"]
+CMD ["postgres", "./todo-app"]
